@@ -70,6 +70,7 @@
             text-decoration: underline;
             color: #0669e2;
         }
+
     </style>
     <script>
         function loadCheckboxStates() {
@@ -79,7 +80,7 @@
                 const checkboxId = checkbox.id;
                 const isChecked = localStorage.getItem(checkboxId) === "true";
                 checkbox.checked = isChecked;
-            })
+            });
         }
 
         function saveCheckboxState(checkboxId) {
